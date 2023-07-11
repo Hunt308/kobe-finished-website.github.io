@@ -32,6 +32,12 @@ body{
     width: 80%;
 }
 
+.number, .linkedin{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 0.5rem;
+}
+
 
 
 
@@ -192,6 +198,7 @@ nav ul li a{
 
 
 
+
 /* Projects page */
 
 
@@ -260,34 +267,6 @@ nav ul li a{
 
 
 
-/* Skills page */
-
-
-
-
-.skill-text{
-    color: #fff;
-    top: 0%;
-    left: 10%;
-    position: relative;
-    width: 100%;
-    font-size: 21px;
-    font-family:'Electrolize', sans-serif;
-}
-
-.skill-text span{
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-.showcase-projects ul li {
-    color: #fff;
-    list-style-position: outside;
-    position: relative;
-    left: 15%;
-    padding: 1rem;
-
-}
 
 
 
@@ -325,7 +304,7 @@ nav ul li a{
 
 
 .about-section ul span, .about-section h3{
-    text-decoration: underline;
+    font-style: italic;
     font-weight: bold;
 
 }
@@ -474,7 +453,7 @@ nav ul li a{
 }
 
 
-@media(max-width: 450px){
+@media(max-width: 600px){
     .about-section h1 {
         top: 10%;
         left: 35%;
@@ -502,7 +481,12 @@ nav ul li a{
     .showcase-projects h1 {
         font-size: 45px;
 
-    
+
+    }
+
+
+    .number, .linkedin{
+        font-size: 12px;
     }
     
 }
