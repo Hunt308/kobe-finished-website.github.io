@@ -1,0 +1,508 @@
+/* base classes */
+@import url('https://fonts.googleapis.com/css2?family=Goldman&family=Open+Sans:wght@300&family=Raleway&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Goldman&family=Open+Sans:wght@300&family=Raleway&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+img {
+    width: 100%;
+}
+
+.main-image {
+    width: 100%;
+}
+
+body{
+    background-color: black;
+}
+
+.current a, a:hover{
+    border-bottom: 1px solid #fff;
+    margin-bottom: 2px;
+}
+
+.container{
+    width: 80%;
+}
+
+
+
+
+/* nav bar */
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    
+}
+
+
+
+nav img {
+    position: relative;
+    width: 25%;
+    top: 6%;
+    left: 10%;
+    align-items: center;
+    margin-top: 20px;
+    animation-name: logo;
+    animation-duration: 1s;
+
+}
+
+@keyframes logo {
+    0% {top: -300px;}
+    100% {top: 0;};
+}
+
+
+
+nav ul {
+    position: relative;
+    display: flex;
+    top: 6%;
+    right: 10%;
+    align-items: center;
+    margin-top: 20px;
+    animation-name: nav-ul;
+    animation-duration: 0.8s;
+
+}
+
+
+@keyframes nav-ul {
+    0% {top: -300px;}
+    100% {top: 0;};
+}
+
+nav ul li {
+    list-style-type: none;
+    padding-left: 4rem;
+    font-size: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-family: sans-serif;
+
+}
+
+
+/* Showcase */
+
+.showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    height: 489px;
+}
+
+
+.showcase .showcase-text{
+    color: #fff;
+    top: 0%;
+    left: 10%;
+    position: relative;
+    width: 100%;
+    animation-name: example;
+    animation-duration: 1s;
+}
+
+@keyframes example {
+    0% {left: -30%;}
+    100% {left: 10%;}
+}
+
+.showcase .showcase-text h1{
+    font-family: 'Goldman', cursive;
+    text-transform: uppercase;
+    font-size: 60px;
+
+}
+.showcase .showcase-text h3{
+    text-decoration: underline;
+    font-style: italic;
+    font-family: 'Audiowide', cursive;
+}
+
+
+
+.showcase img{
+    width: 349px;
+    height: 350px;
+    position: relative;
+    top: 50%;
+    left: 40%;
+    animation-name: picture;
+    animation-duration: 4s;
+}
+
+@keyframes picture {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+
+.showcase h1, .showcase h3, .showcase p{
+    margin-bottom: 2rem;
+}
+
+.showcase p{
+    font-family: 'Electrolize', sans-serif;
+
+}
+
+
+.showcase .showcase-text .start {
+    color: #F90000;
+    text-decoration: underline;
+}
+
+.showcase .showcase-text .finish {
+    color: #00DC3E;
+    text-decoration: underline;
+
+}
+
+.start-1{
+    color: #F90000;
+
+}
+
+.finish-1 {
+    color: #00DC3E;
+}
+
+
+
+
+
+
+
+
+/* Projects page */
+
+
+.showcase-projects{
+    position: relative;
+}
+
+
+.showcase-projects h1 {
+    font-family: 'Goldman', cursive;
+    text-transform: uppercase;
+    font-size: 60px;
+    color: #00DC3E;
+    position: relative;
+    width: 25%;
+    top: 10%;
+    left: 11%;
+    margin-top: 20px;
+
+}
+
+
+.showcase-projects h3 {
+    font-family: 'Audiowide', cursive;
+
+}
+
+
+
+.showcase-projects img {
+    width: 330px;
+    height: 500px;
+    position: relative;
+    width: 25%;
+    top: 15%;
+    left: 11%;
+    margin-bottom: 6.5rem;
+    margin-top: 1rem;
+    
+}
+
+.showcase-projects img:nth-child(even){
+    position: relative;
+    top: 15%;
+    left: 35%;
+}
+
+
+.showcase-projects h1 span {
+    color: #F90000;
+}
+
+
+.showcase-projects h3{
+    color: #fff;
+    position: relative;
+    left: 11%;
+    font-size: 28px;
+    display: inline;
+}
+
+
+.bottom-items {
+    margin-top: 15rem;
+}
+
+
+
+/* Skills page */
+
+
+
+
+.skill-text{
+    color: #fff;
+    top: 0%;
+    left: 10%;
+    position: relative;
+    width: 100%;
+    font-size: 21px;
+    font-family:'Electrolize', sans-serif;
+}
+
+.skill-text span{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.showcase-projects ul li {
+    color: #fff;
+    list-style-position: outside;
+    position: relative;
+    left: 15%;
+    padding: 1rem;
+
+}
+
+
+
+/* About page */
+
+.about-section {
+    width: 65%;
+}
+
+.about-section p{
+    position: relative;
+    left: 15%;
+    color: #fff;
+    font-family: 'Electrolize', sans-serif;
+
+
+}
+
+.about-section h1 {
+    font-family: 'Goldman', cursive;
+    text-transform: uppercase;
+    font-size: 60px;
+    color: #00DC3E;
+    position: relative;
+    width: 25%;
+    top: 10%;
+    left: 15%;
+    margin-top: 20px;
+
+}
+
+.about-section h1 span {
+    color: #F90000;
+}
+
+
+.about-section ul span, .about-section h3{
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+.about-section h3{
+    position: relative;
+    left: 15%;
+    color: #fff;
+    font-size: 27px;
+    font-family: 'Audiowide', cursive;
+
+
+}
+
+.about-section ul li{
+    color: #fff;
+    list-style-position: outside;
+    position: relative;
+    left: 15%;
+    padding: 1rem;
+    font-family: 'Electrolize', sans-serif;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* footer */
+
+.footer {
+    margin-top: 1rem;
+    height: 500px;
+    position: relative;
+}
+
+
+
+
+/* Media Queries */
+
+@media(max-width:950px){
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav img {
+        width: 100%;
+        top: 0%;
+        left: auto;
+    }
+    
+    nav ul {
+        top: 0%;
+        text-align: center;
+    
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    .showcase {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .showcase .showcase-text{
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .showcase img{
+        top: 0%;
+        left: 0%;
+        padding: 1rem;
+        
+    }
+
+    .showcase h1, .showcase h3, .showcase p{
+        margin-bottom: 0.5rem;
+    }
+
+    .about-section {
+        text-align: center;
+    }
+
+   
+
+    .about-section p{
+        position: relative;
+        left: 25%;
+        color: #fff;
+        font-family: 'Electrolize', sans-serif;
+    
+    
+    }
+
+
+    .about-section h3{
+        left: 23%;
+
+
+    }
+
+
+    .about-section h1 {
+        top: 10%;
+        left: 50%;
+        margin-top: 20px;
+    
+    }
+
+    .about-section ul li{
+        color: #fff;
+        list-style-position: outside;
+        position: relative;
+        left: 25%;
+        padding: 0;
+        font-family: 'Electrolize', sans-serif;
+        list-style-type: none;
+        margin-top: 1rem;
+    
+    
+    }
+
+    .showcase .showcase-text h1{
+        font-size: 40px;
+    
+    }
+
+    
+
+    
+    
+
+
+}
+
+
+@media(max-width: 450px){
+    .about-section h1 {
+        top: 10%;
+        left: 35%;
+        margin-top: 20px;
+    
+    }
+
+    .showcase-projects img {
+        width: 400px;
+        height: 500px;
+        position: relative;
+        left: 0%;
+        margin-bottom: 6.5rem;
+        margin-top: 1rem;
+        
+    }
+
+    .showcase-projects img:nth-child(even){
+        position: relative;
+        top: 15%;
+        left: 0%;
+    }
+    
+
+    .showcase-projects h1 {
+        font-size: 45px;
+
+    
+    }
+    
+}
