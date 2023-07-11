@@ -342,8 +342,17 @@ nav ul li a{
 
 .footer {
     margin-top: 1rem;
-    height: 500px;
-    position: relative;
+    height: 100px;
+    color: #fff;
+    text-align: center;
+    background-color: #F90000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-size: 20px;
+    font-family: 'Goldman', cursive;
+
 }
 
 
@@ -487,6 +496,11 @@ nav ul li a{
 
     .number, .linkedin{
         font-size: 12px;
+    }
+
+    .footer {
+        font-size: 14px;
+    
     }
     
 }
